@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Hey,\nRegister Now!"
+                android:textColor="@color/white"
+                android:textSize="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="21dp">
+
+            <EditText
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:id="@+id/Username"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:inputType="text"
+                android:hint="Username"
+                android:textColor="#545454"
+                android:textColorHint="#545454"
+                android:background="@drawable/input_background"
+                android:textSize="19dp"/>
+
+            <EditText
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:id="@+id/Email"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColor="#545454"
+                android:textColorHint="#545454"
+                android:background="@drawable/input_background"
+                android:textSize="19dp" />
+
+            <EditText
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:id="@+id/Password"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColor="#545454"
+                android:textColorHint="#545454"
+                android:background="@drawable/input_background"
+                android:textSize="19dp" />
+
+            <EditText
+                android:layout_marginTop="24dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:id="@+id/ConfirmPassword"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:textColor="#545454"
+                android:textColorHint="#545454"
+                android:background="@drawable/input_background"
+                android:textSize="19dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="80dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/poppins_extralight"
+                android:text="Don’t have an account?"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/Register"
+                android:layout_width="330dp"
+                android:layout_height="54dp"
+                android:text="Register"
+                android:fontFamily="@font/poppins_medium"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:background="@drawable/login_background"
+                android:layout_marginBottom="22dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/SkipNow"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Skip Now"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
